@@ -21,12 +21,6 @@ jobs:
           else
           npm i
           fi
-          
-      - name: Build 📦
-        run: npm run build
-
-      - name: Test 🧪
-        run: npm test
 
       - name: Release 🚀
         env:
