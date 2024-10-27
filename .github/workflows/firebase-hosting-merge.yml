@@ -18,8 +18,10 @@ jobs:
           yarn install --frozen-lockfile
           elif [ -e package-lock.json ]; then
           npm ci
+          npm install -D semantic-release semantic-release-monorepo
           else
           npm i
+          npm install -D semantic-release semantic-release-monorepo
           fi
 
       - name: Release 🚀
